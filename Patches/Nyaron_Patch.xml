@@ -92,6 +92,15 @@
 				</li>
 				
 				
+				<!-- Add Hair -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/HairDef[defName="Nr_Long" or defName="Nr_Short" or defName="Nr_Twin" or defName="Nr_Twintw" or defName="Nr_ShortTwin" or defName="Nr_Pony"]/styleGender</xpath>
+					<value>
+						<styleGender>Any</styleGender>
+					</value>
+				</li>
+				
+				
 				<!-- Add Nyaron Town -->
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs</xpath>
