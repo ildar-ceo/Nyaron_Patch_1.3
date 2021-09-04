@@ -125,7 +125,7 @@
 					<xpath>/Defs</xpath>
 					<value>
 						<FactionDef ParentName="SK_NyaronFactionBase">
-							<defName>Nyaron Empire</defName>
+							<defName>NyaronEmpire</defName>
 							<label>Nyaron Empire</label>
 							<description>Nyaron Empire</description>
 							<permanentEnemy>true</permanentEnemy>
@@ -175,53 +175,26 @@
 					</value>
 				</li>
 				
-				<li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[@Name="BaseNyaronPawn"]/inspectorTabs</xpath>
-                    <value>
-                        <li>ITab_Pawn_Gear</li>
-                    </value>
-				</li>
-				
-				<!--
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/ThingDef[@Name="BaseNyaronPawn"]</xpath>
-					<value>
-						<ThingDef Name="BaseNyaronPawn" Abstract="True">
-							<thingClass>Pawn</thingClass>
-							<category>Pawn</category>
-							<selectable>true</selectable>
-							<tickerType>Normal</tickerType>
-							<altitudeLayer>Pawn</altitudeLayer>
-							<useHitPoints>false</useHitPoints>
-							<hasTooltip>true</hasTooltip>
-							<soundImpactDefault>BulletImpact_Flesh</soundImpactDefault>
-							<statBases>
-							<Mass>65</Mass>
-							</statBases>
-							<inspectorTabs>
-								<li>ITab_Pawn_Health</li>
-								<li>ITab_Pawn_Needs</li>
-								<li>ITab_Pawn_Character</li>
-								<li>ITab_Pawn_Training</li>
-								<li>ITab_Pawn_Social</li>
-								<li>ITab_Pawn_Guest</li>
-								<li>ITab_Pawn_Prisoner</li>
-								<li>ITab_Pawn_FormingCaravan</li>
-								<li>ITab_Pawn_Gear</li>
-								<li>ITab_Pawn_Log</li>
-							</inspectorTabs>
-							<comps>
-								<li>
-									<compClass>CompAttachBase</compClass>
-								</li>
-							</comps>
-							<drawGUIOverlay>true</drawGUIOverlay>
-						</ThingDef>
-					</value>
-				</li>
-				-->
-				
 			</operations>
+		</match>
+	</Operation>
+	
+	
+	<!-- ID: 1180721235 -->
+	<Operation Class="PatchOperationFindMod">
+		<mods><li>Nyaron race</li></mods>
+		<match Class="PatchOperationFindMod">
+			<mods><li>Combat Extended</li></mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[@Name="BaseNyaronPawn"]/inspectorTabs</xpath>
+						<value>
+							<li>ITab_Pawn_Gear</li>
+						</value>
+					</li>
+				</operations>
+			</match>
 		</match>
 	</Operation>
 	

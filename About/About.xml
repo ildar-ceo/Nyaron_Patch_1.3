@@ -13,5 +13,5 @@
 	<loadBefore>
 		<li>CETeam.CombatExtended</li>
 	</loadBefore>
-	<description>Nyaron patch for 1.3 with CombatExtended</description>
+	<description>Nyaron patch for 1.3. Fix Nyaron names. Add sex male. Combat extended compatibility patch.</description>
 </ModMetaData>
