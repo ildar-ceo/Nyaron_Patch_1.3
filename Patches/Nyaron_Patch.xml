@@ -32,7 +32,16 @@
 							</include>
 							<rulePack>
 							  <rulesStrings>
-								<li>r_name(p=6)->[NameNyaronUnisexLast] [NameNyaronMaleFirst]</li>
+								<!--<li>r_name(p=6)->[NameNyaronUnisexLast] [NameNyaronFemaleFirst]</li>-->
+								<li>r_name(p=6)->[NameAnimalMale] [NameNyaronUnisexLast]</li>
+								<li>r_name(p=6)->[NameAnimalUnisex] [NameNyaronUnisexLast]</li>
+								<li>r_name(p=6)->[NamePersonMale] [NameNyaronUnisexLast]</li>
+								<li>r_name->[exoticname]</li>
+								<li>exoticname(p=2)->[AdjectiveBadass]</li>
+								<li>exoticname(p=2)->[PersonBadass]</li>
+								<li>exoticname->[Enemy]</li>
+								<li>exoticname->[ConceptAny]</li>
+								<li>exoticname->[Color]</li>
 							  </rulesStrings>
 							</rulePack>
 						</RulePackDef>
@@ -49,7 +58,16 @@
 							</include>
 							<rulePack>
 							  <rulesStrings>
-								<li>r_name(p=6)->[NameNyaronUnisexLast] [NameNyaronFemaleFirst]</li>
+							    <!--<li>r_name(p=6)->[NameNyaronUnisexLast] [NameNyaronFemaleFirst]</li>-->
+								<li>r_name(p=6)->[NameAnimalFemale] [NameNyaronUnisexLast]</li>
+								<li>r_name(p=6)->[NameAnimalUnisex] [NameNyaronUnisexLast]</li>
+								<li>r_name(p=6)->[NamePersonMale] [NameNyaronUnisexLast]</li>
+								<li>r_name->[exoticname]</li>
+								<li>exoticname(p=2)->[AdjectiveBadass]</li>
+								<li>exoticname(p=2)->[PersonBadass]</li>
+								<li>exoticname->[Enemy]</li>
+								<li>exoticname->[ConceptAny]</li>
+								<li>exoticname->[Color]</li>
 							  </rulesStrings>
 							</rulePack>
 						</RulePackDef>
@@ -138,7 +156,7 @@
 					</value>
 				</li>
 				
-				
+				<!--
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/FactionDef[@ParentName="SK_NyaronFactionBase"]</xpath>
 					<value>
@@ -174,7 +192,8 @@
 						</maxPawnCostPerTotalPointsCurve>
 					</value>
 				</li>
-				
+				-->
+
 			</operations>
 		</match>
 	</Operation>
